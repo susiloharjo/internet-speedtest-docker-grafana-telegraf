@@ -1,5 +1,12 @@
 # Monitor your internet speed
 
+
+Project origin from [https://github.com/raaaimund/internet-speed-monitor][8]
+
+Edit docker-compose fer raspberry pi
+
+
+
 with [speedtest.net][1], [Grafana][2], [Telegraf][3], [InfluxDB][4] and [Docker][5].
 
 After running 

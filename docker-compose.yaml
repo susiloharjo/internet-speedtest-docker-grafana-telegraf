@@ -1,7 +1,7 @@
 version: '3'
 services: 
     influxdb:
-        image: influxdb:1.7-alpine
+        image: hypriot/rpi-influxdb
         ports:
             - '8086:8086'
         volumes:
@@ -17,7 +17,8 @@ services:
         depends_on: 
             - "influxdb"
     telegraf:
-        build: 'telegraf/.'
+        image: 'arm32v7/telegraf'
+        #build: 'telegraf/.'
         volumes:
             - speedtest-storage:/usr/speedtest
             - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf
@@ -26,7 +27,7 @@ services:
     grafana:
         build: 'grafana/.'
         ports:
-            - "3000:3000"
+            - "5000:3000"
         volumes:
             - grafana-storage:/var/lib/grafana
         environment:

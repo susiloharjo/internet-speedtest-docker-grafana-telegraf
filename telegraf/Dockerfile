@@ -1,4 +1,4 @@
-FROM telegraf:1.14.0-alpine
+FROM arm32v7/telegraf
 ENV DOCKERIZE_VERSION=v0.6.1
 RUN apk add --no-cache openssl
 RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
