@@ -1,7 +1,7 @@
 # Monitor your internet speed
 
 
-Project origin from [https://github.com/raaaimund/internet-speed-monitor][8]
+Project origin from https://github.com/raaaimund/internet-speed-monitor
 
 Edit docker-compose fer raspberry pi
 
